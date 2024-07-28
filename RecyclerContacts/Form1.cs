@@ -1,7 +1,20 @@
 ﻿/**************************************************************************************
 File name: Form1.cs
-Description: Creates a GUI for interacting with recycler data, enabling reading, 
-             displaying, editing, saving, sorting, and searching of CSV data.
+Purpose:   1. Create GUI From application
+           2. Provide user-interaction (buttons, textboxes, combobox)
+           3. Read recyclers.csv data from external file (when launched)
+           4. Read recycles.csv data from external file (for filter by combobox data)
+           5. Display recyclers data after read, in alpha order
+           6. Display first record in textboxes under Local Recycler Contacts
+           7. Navigate through recycler data (first/last, next/previous)
+           8. Search (by business name) for recycler using binary search
+           9. Clear textbox fields
+           10. Add a new recycler
+           11. Update an existing recycler
+           12. Delete an existing recycler
+           13. Launch default brown and open recycler's url
+           14. Save recycler data to external csv file (when exiting)
+           15. Display recyclers data by waste type (filter)
 Version: 1.0.0
 Author: ┬  ┬ ┬┬┌─┌─┐┬ ┬┌─┐╦╔╦╗
         │  │ │├┴┐├┤ │││├─┤║ ║
