@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RecyclerContacts</name>
+    </assembly>
+    <members>
+        <member name="M:RecyclerContacts.Form1.#ctor">
+            <summary>
+            Constructor method
+            </summary>
+        </member>
+        <member name="M:RecyclerContacts.Form1.ReadRecyclerData(System.String)">
+            <summary>
+            ReadRecyclerData() method
+            </summary>
+            <param name="filePath">Name of external csv to be read</param>
+        </member>
+        <member name="M:RecyclerContacts.Form1.ReadComboData(System.String)">
+            <summary>
+            ReadComboData() method
+            </summary>
+            <param name="filePath">Name of external csv to be read</param>
+        </member>
+        <member name="M:RecyclerContacts.Form1.DisplayRecyclerData">
+            <summary>
+            DisplayRecyclerData() method
+            </summary>
+        </member>
+        <member name="M:RecyclerContacts.Form1.DisplayCurrentRecord">
+            <summary>
+            DisplayCurrentRecord() method
+            </summary>
+        </member>
+        <member name="M:RecyclerContacts.Form1.IsRecyclerValid">
+            <summary>
+            IsRecyclerValid() method
+            </summary>
+            <returns>bool indicating whether all validation checks have passed</returns>
+        </member>
+        <member name="F:RecyclerContacts.Form1.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:RecyclerContacts.Form1.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:RecyclerContacts.Form1.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:RecyclerContacts.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:RecyclerContacts.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:RecyclerContacts.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:RecyclerContacts.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:RecyclerContacts.Recycler">
+            <summary>
+            Recycler class
+            Purpose:    Provide class template for recycler data
+            Implements: IComparable interface and CompareTo() method
+            </summary>
+            <remarks>Luke Wait
+                     24.10.22
+                     Version 1.0</remarks>
+        </member>
+        <member name="P:RecyclerContacts.Recycler.Business">
+            <summary>
+            Public property: Business (name of the recycler)
+            </summary>
+        </member>
+        <member name="P:RecyclerContacts.Recycler.Address">
+            <summary>
+            Public property: Address (address of the recycler)
+            </summary>
+        </member>
+        <member name="P:RecyclerContacts.Recycler.Phone">
+            <summary>
+            Public property: Phone (phone contact of the recycler)
+            </summary>
+        </member>
+        <member name="P:RecyclerContacts.Recycler.Website">
+            <summary>
+            Public property: Website (url of the recycler)
+            </summary>
+        </member>
+        <member name="P:RecyclerContacts.Recycler.Recycles">
+            <summary>
+            Public property: Recycles (types of waste recycled)
+            </summary>
+        </member>
+        <member name="M:RecyclerContacts.Recycler.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor method
+            </summary>
+            <param name="business">Name of the recycler</param>
+            <param name="address">Address of the recycler</param>
+            <param name="phone">Phone contact of the recycler</param>
+            <param name="website">Url of the recycler</param>
+            <param name="recycles">Types of waste recycled</param>
+        </member>
+        <member name="M:RecyclerContacts.Recycler.ToString">
+            <summary>
+            Overridden ToString() method
+            </summary>
+            <returns>Formatted string for display in listingTextBox</returns>
+        </member>
+        <member name="M:RecyclerContacts.Recycler.ToCSVString">
+            <summary>
+            ToCSVString() method
+            </summary>
+            <returns>CSV formatted string for writing to recycler.csv</returns>
+        </member>
+        <member name="M:RecyclerContacts.Recycler.CompareTo(RecyclerContacts.Recycler)">
+            <summary>
+            Implemented CompareTo() method
+            </summary>
+            <param name="other">Recycler object (other instance being compared)</param>
+            <returns>Returns 0 if both business names are equal,
+                     Returns -1 if this.Business is alphabetically less than other.Business,
+                     Returns 1 if this.Business is alphabetically greater than other.Business</returns>
+        </member>
+    </members>
+</doc>

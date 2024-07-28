@@ -1,2 +1,14 @@
-# Ignores
-docs/
+# Compiled files
+RecyclerContacts/bin/
+RecyclerContacts/obj/
+
+# User-specific files
+RecyclerContacts/*.csproj.user
+/.vs
+
+# Backup files
+*.bak
+
+# Other temporary files
+*.tmp
+*.log
